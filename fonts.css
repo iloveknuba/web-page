@@ -1,0 +1,289 @@
+
+body, *, *:before, *:after{
+	box-sizing: border-box;
+
+}
+html, body{
+	font-size: 16px;
+	color: #474747;
+	font-family:'Dosis', sans-serif;
+	background: linear-gradient(45deg, #fbda61, #ff5acd);
+
+}
+.fixed-width{
+	width: 1000px;
+	margin: 0 auto;
+}
+a{
+	color: inherit;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 1em;
+
+
+}
+
+
+a em:hover, a em:active{
+	text-decoration: none;
+	color: blueviolet;
+
+}
+h1,h2,h3,h4,h5,h6{
+	font-family:'Libre Baskerville', sans-serif;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin: 0 0 1em;
+	font-size: 1.4em;
+}
+h2,h3{
+	font-size: 1.5em;
+	/*animation: light 1.5s ease-in-out infinite alternate;*/
+}
+/*@keyframes light{
+	from{
+		color: $fff;
+		text-shadow: 0 0 10px #00fff2, 0 0 20px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 90px #00fff2;
+
+	}
+	to{
+		color: lightgrey;
+		text-shadow: 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 80px #00fff2, 0 1 90px #00fff2;
+	}
+}
+*/
+p{
+	line-height: 1.3em;
+	font-size: 1.2em;
+}
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+.data-block{
+	margin-bottom: 30px;
+}
+/*=========================================================
+           Header
+  =========================================================*/
+
+.page-header{
+	padding-bottom: 50px;
+	position: sticky;
+	top: 0;
+	background-color: #fff;
+
+	}
+
+	.page-header > div {
+	
+	position: relative;
+	}
+
+
+.fascinate{
+	font-family: 'Fascinate Inline', cursive;
+	text-align: center;
+	letter-spacing: 5px;
+	font-size: 3em;
+	position: absolute;
+	bottom: 0;
+	margin-left: 0;
+	transition: 0.5s;
+	left: 10px;
+
+	
+}
+.fascinate:hover{
+	color: #78ed3d;
+}
+.page-header nav{
+	float: right;
+	text-transform: uppercase;
+}
+.page-header nav li{
+	float: left;
+	margin-right: 3em;
+	padding-top: 3em;
+}
+.page-header nav li:last-child{
+	margin-right: 0;
+}
+
+.page-header nav li em{
+	display: block;
+	font-size: 20px;
+
+
+}
+.menu-item-info{
+  display: none;
+  position: absolute;
+  left: 0;
+  border: 1px solid #ddd;
+  border-top: none;
+  width: 100%;
+  background-color: #fff;
+  padding: 0.5em;
+  color: #333;
+  width: 15%;
+  height: 2em;
+  margin-top: 2.5em;
+  border-radius: 20%;
+  text-align: center;
+  font-size: 2em;
+}
+.visible{
+	display: block;
+}
+/*==================================================
+Main content
+===================================================*/
+.main-content .title{
+	background-color: #fbda61;
+	
+	padding: 10px 0;
+	padding-left: 10px;
+	border-radius: 30px;
+	cursor:	pointer;
+
+
+
+}
+.main-content .title strong{
+	font-size: 2.1em;
+	text-decoration: line-through;
+	
+}
+.main-content img{
+	width: 1000px;
+	margin-left: 0px;
+	
+	border-radius: 50px;
+	
+
+}
+/*=================================================
+Claims
+========================================================*/
+.claim{
+	
+	width: 30%;
+	margin-right: 5%;
+	float: left;
+	
+
+
+
+}
+	.claim:last-child{
+		margin-right: 0;
+	}
+	
+.claims{
+	line-height: 2em;
+	
+	
+}
+.claim header > i{
+	width: 20%;
+	float: left;
+	
+	
+	font-size: 2em;
+	
+}
+.claim h2{
+	padding-bottom: 1rem;
+	
+
+}
+.claim p > i{
+	width: 10%;
+}
+/*=======================================
+Portfolio
+===============================*/
+.portfolio{
+	position: relative;
+	
+}
+.portfolio:before{
+	content: " ";
+	display: block;
+	height: 30px;
+	background: url(pattern.png) left top repeat-x;
+	margin-bottom: 4em;
+
+}
+.portfolio .title-wrapper{
+	position: absolute;
+	top: 2;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	text-align: center;
+
+	}
+.portfolio h2{
+	display: inline;
+	
+	padding: 0.8em;
+	padding-top: 2em;
+}
+/*=========================
+Work
+============================*/
+.past-works{
+	
+}
+.work{
+	float: left;
+	width: 25%;
+	margin-right: 10%;
+}
+ 	.work:last-child{
+ 		margin-right: 0;
+ 	}
+	.work img{
+		width: 240px;
+		height: 130px;
+		
+		border-radius: 30px;
+		margin-bottom: 20px;
+	}
+	.work img:active{
+		
+		
+	}
+
+ 
+/*==================================================
+Footer
+===================================================*/
+.page-footer:before{
+	content: "";
+	display: block;
+	height: 10px;
+	background: url(pattern.png) left top repeat-x;
+}
+.page-footer{
+	background: #ffbda6;
+	height: 70px;
+	position: sticky;
+	
+}
+.page-footer-content{
+	padding: 1em 0;
+}
+.page-footer .copyright{
+	float: left;
+}
+.page-footer .credit{
+	float: right;
+}
